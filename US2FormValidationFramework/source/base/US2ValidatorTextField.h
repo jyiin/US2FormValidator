@@ -50,7 +50,6 @@
     id <US2ValidatorUIDelegate, UITextFieldDelegate> _validatorUIDelegate;
     US2Validator                                     *_validator;
     US2ValidatorTextFieldPrivate                     *_validatorTextFieldPrivate;
-    BOOL                                             _shouldAllowViolation;
     BOOL                                             _validateOnFocusLossOnly;
 }
 

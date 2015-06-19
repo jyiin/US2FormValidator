@@ -50,7 +50,6 @@
     id <US2ValidatorUIDelegate, UITextViewDelegate> _validatorUIDelegate;
     US2Validator                                    *_validator;
     US2ValidatorTextViewPrivate                     *_validatorTextViewPrivate;
-    BOOL                                            _shouldAllowViolation;
     BOOL                                            _validateOnFocusLossOnly;
 }
 
