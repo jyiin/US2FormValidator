@@ -48,6 +48,9 @@
 
 - (BOOL)check:(NSString *)string
 {
+    _isTooLong = NO;
+    _isTooShort = NO;
+  
     BOOL success = NO;
     
     if (0 == _range.location
@@ -57,11 +60,14 @@
     if (nil == string)
         string = [NSString string];
     
-    if(string.length >= _range.location && string.length <= _range.length)
-    {
+    if (string.length < _range.location) {
+        _isTooShort = YES;
+    } else if (string.length > _range.length) {
+        _isTooLong = YES;
+    } else {
         success = YES;
     }
-    
+  
     return success;
 }
 

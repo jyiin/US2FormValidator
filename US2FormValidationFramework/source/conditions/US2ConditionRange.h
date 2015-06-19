@@ -52,6 +52,7 @@
  The range to check for.
 */
 @property (nonatomic, assign) NSRange range;
-
+@property (nonatomic, assign) BOOL isTooShort;
+@property (nonatomic, assign) BOOL isTooLong;
 
 @end
